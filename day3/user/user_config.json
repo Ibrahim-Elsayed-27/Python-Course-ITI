@@ -1,0 +1,6 @@
+{
+  "email_regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+  "phone_regex": "^01[0125][0-9]{8}$",
+  "min_password_length": 8,
+  "users_data_file": "data/users.json"
+}
