@@ -1,5 +1,5 @@
 {% extends "layouts/layout.html" %}
-
+{% load static %}
 {% block title %}Products - Online Store{% endblock %}
 
 {% block content %}
@@ -12,6 +12,8 @@
             <div class="card-body">
                 <h5 class="card-title">{{ product.name }}</h5>
                 <p class="card-text">{{ product.description }}</p>
+
+                <img src="{% static 'products/' %}{{ product.image }}" class="card-img-top mb-3" alt="{{ product.name }}" style="max-width: 300px; height: auto;">
                 <p class="card-text"><strong>${{ product.price }}</strong></p>
                 <a href="{% url 'products:product_detail' product.id %}" class="btn btn-primary">Show</a>
             </div>

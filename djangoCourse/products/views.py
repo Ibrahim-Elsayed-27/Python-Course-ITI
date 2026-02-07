@@ -3,9 +3,9 @@ from django.http import Http404
 # Create your views here.
 
 products_list = [
-    {'id': 1, 'name': 'Laptop', 'price': 999.99, 'description': 'High-performance laptop'},
-    {'id': 2, 'name': 'Mouse', 'price': 25.99, 'description': 'Wireless mouse'},
-    {'id': 3, 'name': 'Keyboard', 'price': 49.99, 'description': 'Mechanical keyboard'},
+    {'id': 1, 'name': 'Laptop', 'price': 999.99, 'description': 'High-performance laptop', 'image': 'laptop.png'},
+    {'id': 2, 'name': 'Mouse', 'price': 25.99, 'description': 'Wireless mouse', 'image': 'mouse.png'},
+    {'id': 3, 'name': 'Keyboard', 'price': 49.99, 'description': 'Mechanical keyboard', 'image': 'keyboard.png'},
 ]
 
 def products(request):
