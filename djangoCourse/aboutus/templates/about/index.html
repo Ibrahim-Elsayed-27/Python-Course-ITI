@@ -1,0 +1,49 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}About Us - Online Store{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <h1 class="mb-4">About Our Online Store</h1>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Our Story</h2>
+                <p class="card-text">
+                    Welcome to our online store! We are passionate about providing high-quality products
+                    to our customers with exceptional service and fast delivery.
+                </p>
+                <p class="card-text">
+                    Founded in 2024, our mission is to make shopping convenient, enjoyable, and affordable
+                    for everyone. We carefully curate our product selection to ensure we offer only the
+                    best items from trusted manufacturers.
+                </p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Our Values</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><strong>Quality:</strong> We never compromise on product quality</li>
+                    <li class="mb-2"><strong>Customer Service:</strong> Your satisfaction is our priority</li>
+                    <li class="mb-2"><strong>Reliability:</strong> Fast and secure shipping you can trust</li>
+                    <li class="mb-2"><strong>Innovation:</strong> We continuously improve our services</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Contact Us</h2>
+                <p class="card-text">
+                    Have questions? We'd love to hear from you! Visit our contact page or reach out
+                    to our customer service team.
+                </p>
+                <a href="{% url 'contactus:contact' %}" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

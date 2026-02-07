@@ -1,0 +1,22 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}Products - Online Store{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">Our Products</h1>
+
+        {% for product in products %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+                <p class="card-text"><strong>${{ product.price }}</strong></p>
+                <a href="{% url 'products:product_detail' product.id %}" class="btn btn-primary">Show</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

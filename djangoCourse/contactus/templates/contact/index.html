@@ -1,0 +1,83 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}Contact Us - Online Store{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <h1 class="mb-4">Contact Us</h1>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Get in Touch</h2>
+                        <p class="card-text">
+                            We'd love to hear from you! Send us a message and we'll respond as soon as possible.
+                        </p>
+
+                        <div class="mb-3">
+                            <h5>Customer Service</h5>
+                            <p class="mb-1"><strong>Email:</strong> support@onlinestore.com</p>
+                            <p class="mb-1"><strong>Phone:</strong> (123) 456-7890</p>
+                            <p class="mb-1"><strong>Hours:</strong> Mon-Fri 9AM-6PM EST</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <h5>Business Inquiries</h5>
+                            <p class="mb-1"><strong>Email:</strong> business@onlinestore.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Visit Our Store</h2>
+                        <div class="mb-3">
+                            <h5>Address</h5>
+                            <p class="mb-1">123 Commerce Street</p>
+                            <p class="mb-1">Business District</p>
+                            <p class="mb-1">New York, NY 10001</p>
+                            <p class="mb-1">United States</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <h5>Store Hours</h5>
+                            <p class="mb-1">Monday - Friday: 9:00 AM - 7:00 PM</p>
+                            <p class="mb-1">Saturday: 10:00 AM - 5:00 PM</p>
+                            <p class="mb-1">Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Send us a Message</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
