@@ -8,7 +8,7 @@
     <div class="col-12">
         <h1>{{ product.name }}</h1>
         <p>{{ product.description }}</p>
-        <img src="{% static 'products/' %}{{ product.image }}" alt="{{ product.name }}" style="max-width: 400px; height: auto; margin-bottom: 20px;">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}" style="max-width: 400px; height: auto; margin-bottom: 20px;">
         <p><strong>${{ product.price }}</strong></p>
         <a href="{% url 'products:product_list' %}" class="btn btn-secondary">Back to Products</a>
     </div>
